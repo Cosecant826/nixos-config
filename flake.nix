@@ -6,18 +6,19 @@
         systems = [ "x86_64-linux" ];
         imports = [
             ./hosts
-            inputs.treefmt-nix.flakeModules
+            # inputs.treefmt-nix.flakeModules
             { _module.args = { inherit inputs self nixpkgs; }; }
         ];
         flake = {
-            homeManagerModules = import ./modules/home-managerl;
+            # homeManagerModules = import ./modules/home-manager;
+            homeManagerModules = {};
         };
-        perSystem = {
-            { pkgs, ... }:
-            {
-                # packages = import ./pkgs { inherit pkgs; };
-            }
-        }
+        # perSystem = {
+        #     { pkgs, ... }:
+        #     {
+        #         # packages = import ./pkgs { inherit pkgs; };
+        #     };
+        # };
     };
 
     inputs = {
