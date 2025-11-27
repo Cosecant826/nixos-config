@@ -8,13 +8,13 @@ let
   sharedOSModules = [
     ../os
     ../nix
-    inputs.niri.nixosModules.niri
+    # inputs.niri.nixosModules.niri
   ];
 
   sharedHomeModules = [
     ../nix/nixpkgs.nix
-    inputs.niri.homeModules.niri
-    inputs.noctalia-shell.homeModules.default
+    # inputs.niri.homeModules.niri
+    # inputs.noctalia-shell.homeModules.default
   ]
   ++ (builtins.attrValues self.homeManagerModules);
 

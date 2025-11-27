@@ -29,22 +29,15 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         flake-parts.url = "github:hercules-ci/flake-parts";
-        niri-unstable = {
-            url = "github:YalTeR/niri";
-            # url = "github:visualglitch91/niri/feat/blur-lite";
-            flake = false;
-        };
-        # niri.url = "github:sodiboo/niri-flake";
-        # treefmt-nix.url = "github:numtide/treefmt-nix";
         ghostty.url = "github:ghostty-org/ghostty";
         nixGL.url = "github:nix-community/nixGL";
         quickshell = {
             url = "git+https://git.outfoxxed.me/quickshell/quickshell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        noctalia-shell = {
-            url = "github:noctalia-dev/noctalia-shell";
-            inputs.quickshell.follows = "quickshell";
-        };
+        # noctalia-shell = {
+        #     url = "github:noctalia-dev/noctalia-shell";
+        #     inputs.quickshell.follows = "quickshell";
+        # };
     };
 }
