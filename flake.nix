@@ -29,7 +29,12 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         flake-parts.url = "github:hercules-ci/flake-parts";
-        niri.url = "github:sodiboo/niri-flake";
+        niri-unstable = {
+            url = "github:YalTeR/niri";
+            # url = "github:visualglitch91/niri/feat/blur-lite";
+            flake = false;
+        };
+        # niri.url = "github:sodiboo/niri-flake";
         # treefmt-nix.url = "github:numtide/treefmt-nix";
         ghostty.url = "github:ghostty-org/ghostty";
         nixGL.url = "github:nix-community/nixGL";

@@ -8,11 +8,11 @@
     # virt-manager.enable = true;
     git = {
       enable = true;
-      # config = {
-      #   safe = {
-      #     directory = "*";
-      #   };
-      # };
+      config = {
+        safe = {
+          directory = "*";
+        };
+      };
     };
   };
 }
